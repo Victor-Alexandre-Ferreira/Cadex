@@ -1,8 +1,9 @@
-const express = require('express');
+ const express = require('express');
+ 
+ const router = express.Router();
 
-const router = express.Router();
-const cadexController = require('../controllers/cadex');
-
-router.get('/cadex', cadexController.get);
-
-module.exports = router;
+router.get('/cadex', (_,response) => {
+    
+});
+ 
+ module.exports= router;
